@@ -1,0 +1,58 @@
+[
+  {
+    "_id": 38,
+    "prenom": "Murphy",
+    "nom": "Keisha",
+    "email": "keishamurphy@buzzopia.com",
+    "telephone": "+1 (963) 599-3328",
+    "password": "Reprehenderit ipsum cillum cillum eiusmod magna aute."
+  },
+  {
+    "_id": 21,
+    "prenom": "Buchanan",
+    "nom": "Tammi",
+    "email": "tammibuchanan@buzzopia.com",
+    "telephone": "+1 (999) 587-3243",
+    "password": "Laboris ipsum ad excepteur ex cillum sunt nulla occaecat sunt ad et ex sit."
+  },
+  {
+    "_id": 18,
+    "prenom": "Burke",
+    "nom": "Katheryn",
+    "email": "katherynburke@buzzopia.com",
+    "telephone": "+1 (958) 593-2273",
+    "password": "Anim id est ad velit ut est est exercitation."
+  },
+  {
+    "_id": 29,
+    "prenom": "Hunt",
+    "nom": "Amanda",
+    "email": "amandahunt@buzzopia.com",
+    "telephone": "+1 (949) 487-2405",
+    "password": "Do ex proident deserunt elit sit minim id consectetur deserunt Lorem tempor ad."
+  },
+  {
+    "_id": 9,
+    "prenom": "Bradley",
+    "nom": "Rose",
+    "email": "rosebradley@buzzopia.com",
+    "telephone": "+1 (933) 572-3875",
+    "password": "Cupidatat irure id ipsum ut sit quis labore qui quis elit proident do amet."
+  },
+  {
+    "_id": 30,
+    "prenom": "Montoya",
+    "nom": "Valarie",
+    "email": "valariemontoya@buzzopia.com",
+    "telephone": "+1 (974) 538-2761",
+    "password": "Deserunt incididunt est eiusmod minim ea sint commodo ullamco qui eiusmod."
+  },
+  {
+    "_id": 22,
+    "prenom": "Moon",
+    "nom": "Geraldine",
+    "email": "geraldinemoon@buzzopia.com",
+    "telephone": "+1 (960) 549-2736",
+    "password": "Eiusmod ipsum dolore nostrud in ipsum laborum veniam do aliqua commodo amet aliqua ullamco sint."
+  }
+]

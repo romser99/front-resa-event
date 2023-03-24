@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component  } from '@angular/core';
+import { CompteurService  } from './services/compteur.service';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +10,13 @@ export class AppComponent {
   compteur = 6;
   libelle = "Le compteur initial est";
   civilite = ""
+  constructor (private compteurService : CompteurService){
+    
+  }
 
   miseAjourDuCompteur(increment: number){
-    this.compteur = increment === 1 ? this.compteur + 1 : this.compteur - 1
+    console.log(increment ===1)
+    this.compteur = this.compteurService.update(this.compteur, increment)
   }
   majCivilite(valeur : number){
     if (valeur == 1){

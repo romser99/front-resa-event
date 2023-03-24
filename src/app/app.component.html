@@ -1,16 +1,13 @@
+<app-header></app-header>
 <router-outlet></router-outlet>
-
-
-<div class="d-flex flex-column justify-content-between align-content-center" style="width: 40%; margin: auto; height: 200px; background-color: #7d7d7d; padding-bottom: 20px;">
-  <h2 class="text-center" style="color: white;">Veuillez indiquer votre civilité</h2>
-  <app-civilite class="text-center" [civilite]="civilite"></app-civilite>
-
-  <app-edition-civilite class="d-flex justify-content-between" (majCiviliteEvent) = "majCivilite($event)"></app-edition-civilite>
-</div>
+<footer></footer>
 
 
 
-<!--<h2>{{libelle}} {{compteur}}</h2>
 
+<!--<h2>{{libelle}} {{compteur}}</h2> 
+<app-client-profiles></app-client-profiles>
+<p>HELLO</p>
+<app-comments></app-comments>
 <app-libelle-compteur [compteur]="compteur"></app-libelle-compteur>
 <app-edition-compteur (miseAjourDuCompteurEvent) = "miseAjourDuCompteur($event)"></app-edition-compteur>-->

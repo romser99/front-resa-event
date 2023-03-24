@@ -1,0 +1,16 @@
+<div class="container">
+    <form (submit)="login()" [formGroup]="userForm">
+        <div>
+          <label for="email" class="form-label">Email</label>
+          <input formControlName="email" type="email" class="form-control" id="email">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Mot De Passe</label>
+            <input formControlName="password" type="text" class="form-control" id="password">
+          </div>
+        <button type="submit" class="btn btn-primary">Se connecter</button>
+    </form>
+      <p>Pas de Compte ?</p>
+      <a class="btn btn-primary" routerLink="/inscription">S'inscrire</a>
+    
+</div>
