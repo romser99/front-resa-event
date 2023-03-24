@@ -22,7 +22,7 @@ export class ClientsService {
 
   public login(email : String, password: String): Observable<Boolean>{
     console.log(this.http.get<Boolean>('http://localhost:8080/api/client?mail='+email+'&password='+password))
-    return this.http.get<Boolean>('http://localhost:8080/api/client?mail='+email+'&password='+password);
+    return this.http.get<Boolean>('http://localhost:8080/api/client/connection?mail='+email+'&password='+password);
   
   }
 }
