@@ -14,6 +14,7 @@ const routes: Routes = [
   {
     path:'commentaires/:id',
     component: CommentDetailComponent
+
   },
   {
   path:'commentaires',
@@ -23,6 +24,7 @@ const routes: Routes = [
     path:'',
     redirectTo :'accueil',
     pathMatch:'full'
+    
   },
   {
     path:'inscription',
@@ -39,4 +41,6 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
+
 export class AppRoutingModule { }

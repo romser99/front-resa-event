@@ -12,6 +12,7 @@ export class ConnectionClientComponent implements OnInit {
   
   validite: any;
   userForm: any ;
+  authrequest : any
   
 
   constructor(private cs: ClientsService,private cos: ConnectionService) {}
@@ -20,12 +21,11 @@ export class ConnectionClientComponent implements OnInit {
   }
 
   public login() {
-    const email = this.userForm.value.email;
-    const password = this.userForm.value.password;
+    this.authrequest = this.userForm.value;
     if (this.userForm.status === "INVALID") return;
     else {
-      this.cs.login(email,password).subscribe((data: any) => console.log(data));
-      console.log(this.cs.login(email,password))
+      this.cs.login(this.authrequest).subscribe((data: any) => console.log(data));
+    
     }
     
     

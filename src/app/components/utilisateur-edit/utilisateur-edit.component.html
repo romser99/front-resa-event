@@ -1,28 +1,32 @@
-<div class="container">
-    <form (submit)="enregistrer()" [formGroup]="userForm">
+<div class="container d-flex flex-column justify-content-between" style="align-items: center;">
+    <form (submit)="enregistrer()" [formGroup]="userForm" class="d-flex flex-column justify-content-between" style=" align-items: center;">
         <div class="mb-3">
-            <label for="surname" class="form-label">Prenom</label>
-            <input formControlName="prenom" type="text" class="form-control" id="surname">
+            <label for="surname" class="form-label" style="text-align: center; width: 300px;color: white;font-weight: bold; font-size: larger;">Prenom</label>
+            <input formControlName="prenom" type="text" class="form-control" id="surname" style="background-color:#EAEAEA ;text-align: right;" placeholder="Jean">
           </div>
           <div class="mb-3">
-            <label for="name" class="form-label">Nom</label>
-            <input formControlName="nom" type="text" class="form-control" id="name">
+            <label for="name" class="form-label" style="text-align: center; width: 300px;color: white;font-weight: bold; font-size: larger;">Nom</label>
+            <input formControlName="nom" type="text" class="form-control" id="name" style="background-color:#EAEAEA ;text-align: right;" placeholder="Dupont">
           </div>
         <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input formControlName="email" type="email" class="form-control" id="email">
+          <label for="email" class="form-label" style="text-align: center; width: 300px;color: white;font-weight: bold; font-size: larger;">Email</label>
+          <input formControlName="email" type="email" class="form-control" id="email" style="background-color:#EAEAEA ;text-align: right;" placeholder="example@gmail.com">
         </div>
         <div class="mb-3">
-          <label for="telephone" class="form-label">Telephone</label>
-          <input formControlName="telephone" type="text" class="form-control" id="telephone">
+          <label for="telephone" class="form-label" style="text-align: center; width: 300px;color: white;font-weight: bold; font-size: larger;">Telephone</label>
+          <input formControlName="telephone" type="text" class="form-control" id="telephone" style="background-color:#EAEAEA ; text-align: right; " placeholder="01 23 45 67 89">
         </div>
         <div class="mb-3">
-            <label for="password" class="form-label">Mot De Passe</label>
-            <input formControlName="password" type="text" class="form-control" id="password">
-          </div>
-        <button type="submit" class="btn btn-primary">S'inscrire</button>
+            <label for="password" class="form-label" style="text-align: center; width: 300px;color: white;font-weight: bold; font-size: larger;">Mot De Passe</label>
+            <input formControlName="password" type="password" class="form-control" id="password" style="background-color:#EAEAEA ;text-align: right;" placeholder="Mot de Passe" >
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label" style="text-align: center; width: 300px;color: white;font-weight: bold; font-size: larger;">Verification Mot de Passe</label>
+          <input formControlName="password" type="password" class="form-control" id="password" style="background-color:#EAEAEA ;text-align: right;" placeholder="Verification Mot de Passe" >
+      </div>
+        <button type="submit" class="btn btn-primary" style="text-align: center; width: 80%;">S'inscrire</button>
       </form>
-      <p>Déja un compte ?</p>
+      <p style="margin-top: 50px;">Déja un compte ?</p>
       <a class="btn btn-primary" routerLink="/connection">Se Connecter</a>
     
 </div>
