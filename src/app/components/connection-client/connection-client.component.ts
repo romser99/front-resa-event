@@ -9,11 +9,11 @@ import { ClientsService } from 'src/app/services/clients.service';
   styleUrls: ['./connection-client.component.scss']
 })
 export class ConnectionClientComponent implements OnInit {
-  
+
   validite: any;
   userForm: any ;
   authrequest : any
-  
+
 
   constructor(private cs: ClientsService,private cos: ConnectionService) {}
   ngOnInit(): void {
@@ -24,13 +24,16 @@ export class ConnectionClientComponent implements OnInit {
     this.authrequest = this.userForm.value;
     if (this.userForm.status === "INVALID") return;
     else {
-      this.cs.login(this.authrequest).subscribe((data: any) => console.log(data));
-    
+      this.cs.login(this.authrequest).subscribe((data: any) =>{
+        console.log(data)
+        sessionStorage.setItem("TOKEN", data.token);
+      });
+
     }
-    
-    
-  
-    
+
+
+
+
   }
 
 }

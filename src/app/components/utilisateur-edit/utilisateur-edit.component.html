@@ -1,5 +1,5 @@
 <div class="container d-flex flex-column justify-content-between" style="align-items: center;">
-    <form (submit)="enregistrer()" [formGroup]="userForm" class="d-flex flex-column justify-content-between" style=" align-items: center;">
+    <form  (submit)="enregistrer()" [formGroup]="userForm" class="d-flex flex-column justify-content-between" style=" align-items: center;">
         <div class="mb-3">
             <label for="surname" class="form-label" style="text-align: center; width: 300px;color: white;font-weight: bold; font-size: larger;">Prenom</label>
             <input formControlName="prenom" type="text" class="form-control" id="surname" style="background-color:#EAEAEA ;text-align: right;" placeholder="Jean">
@@ -10,7 +10,7 @@
           </div>
         <div class="mb-3">
           <label for="email" class="form-label" style="text-align: center; width: 300px;color: white;font-weight: bold; font-size: larger;">Email</label>
-          <input formControlName="email" type="email" class="form-control" id="email" style="background-color:#EAEAEA ;text-align: right;" placeholder="example@gmail.com">
+          <input formControlName="email" type="email" required class="form-control" id="email" style="background-color:#EAEAEA ;text-align: right;" placeholder="example@gmail.com">
         </div>
         <div class="mb-3">
           <label for="telephone" class="form-label" style="text-align: center; width: 300px;color: white;font-weight: bold; font-size: larger;">Telephone</label>
@@ -22,11 +22,11 @@
         </div>
         <div class="mb-3">
           <label for="password" class="form-label" style="text-align: center; width: 300px;color: white;font-weight: bold; font-size: larger;">Verification Mot de Passe</label>
-          <input formControlName="password" type="password" class="form-control" id="password" style="background-color:#EAEAEA ;text-align: right;" placeholder="Verification Mot de Passe" >
+          <input formControlName="vpassword" type="password" class="form-control" id="password" style="background-color:#EAEAEA ;text-align: right;" placeholder="Verification Mot de Passe" >
       </div>
         <button type="submit" class="btn btn-primary" style="text-align: center; width: 80%;">S'inscrire</button>
       </form>
       <p style="margin-top: 50px;">Déja un compte ?</p>
       <a class="btn btn-primary" routerLink="/connection">Se Connecter</a>
-    
+
 </div>

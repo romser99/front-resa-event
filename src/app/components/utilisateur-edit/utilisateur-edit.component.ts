@@ -17,23 +17,26 @@ export class UtilisateurEditComponent implements OnInit {
 
   userForm: any ;
   newclient: any ;
+  clientform : any
   constructor(private us: UtilisateurService, private cs: ClientsService){}
   ngOnInit(): void {
     this.userForm = this.us.getForm()
-  
   }
 
+
   public enregistrer() {
-    
+
+    delete this.userForm.value.vpassword;
     this.newclient = this.userForm.value ;
     console.log(this.userForm.value)
+
     if (this.userForm.status === "INVALID") return;
     else {
       this.cs.ajoute(this.newclient).subscribe((data: any) => console.log(data));
     }
 
-  
-    
+
+
   }
-  
+
 }
